@@ -4,7 +4,7 @@ function f1() {
 }
 
 var parrafos = document.querySelectorAll(".parrafo")
-
+console.log(parrafos)
 for (let i = 0; i < MediaElementAudioSourceNode.length; i++) {
   const elemento = elementos[i];
   console.log(elemento.textContent);
