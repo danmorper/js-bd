@@ -3,7 +3,7 @@ var opcion = document.getElementById("s");
 var btn = document.querySelector("input");
 function f1() {
     var p = parrafo.innerHTML;
-    alert(opcion);
+    alert(p);
 }
 btn.addEventListener("click", f1)
 
@@ -28,8 +28,9 @@ function f2() {
 }
 
 opcion.addEventListener("change", f2)
-opcion.addEventListener("click", f1)
 
 function f3() {
-    alert("estas to encima illo");
+    console.log("estás encima del párrafo");
 }
+
+parrafo.addEventListener("mouseover", f3)
