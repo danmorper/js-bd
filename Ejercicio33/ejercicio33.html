@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+  <h1>Formulario</h1>
+
+  <form name="miFormulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad"><br>
+
+    <label>Aficiones:</label><br>
+    <input type="checkbox" id="aficion1" name="aficiones" value="futbol">
+    <label for="aficion1">Fútbol</label><br>
+    <input type="checkbox" id="aficion2" name="aficiones" value="musica">
+    <label for="aficion2">Música</label><br>
+    <input type="checkbox" id="aficion3" name="aficiones" value="cine">
+    <label for="aficion3">Cine</label><br>
+
+    <label>Género:</label><br>
+    <input type="radio" id="genero1" name="genero" value="masculino">
+    <label for="genero1">Masculino</label><br>
+    <input type="radio" id="genero2" name="genero" value="femenino">
+    <label for="genero2">Femenino</label><br>
+
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea><br>
+
+    <label for="ciudad">Ciudad:</label>
+    <select id="ciudad" name="ciudad">
+      <option value="madrid">Madrid</option>
+      <option value="barcelona">Barcelona</option>
+      <option value="valencia">Valencia</option>
+    </select><br>
+
+    <label for="colores">Colores favoritos:</label>
+    <select id="colores" name="colores" multiple>
+      <option value="rojo">Rojo</option>
+      <option value="azul">Azul</option>
+      <option value="verde">Verde</option>
+      <option value="amarillo">Amarillo</option>
+    </select><br>
+
+    <input id = "boton"type="submit" value="Enviar">
+  </form>
+  <script src = "ejercicio33.js"></script>
+</body>
+</html>
