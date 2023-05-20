@@ -1,11 +1,11 @@
 function f1() {
-  var p = parrafo.innerHTML;
+  var p = parrafos.innerHTML;
   alert(p);
 }
 
-var parrafos = document.querySelectorAll(".parrafo")
+var parrafos = document.querySelectorAll("#parrafo")
 console.log(parrafos)
-for (let i = 0; i < MediaElementAudioSourceNode.length; i++) {
-  const elemento = elementos[i];
+for (let i = 0; i < parrafos.length; i++) {
+  const elemento = parrafos[i];
   console.log(elemento.textContent);
 }

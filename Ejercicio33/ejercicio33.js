@@ -1,8 +1,28 @@
-// cada vez que un boton sea pulsado, Seleccionar cada elemento de entrada de texto o de n´umero e imprimir por consola su nombre y su valor
-// evento
-boton.addEventListener("click", function() {
-    var inputs = document.queryselector("input[type=text], input[type=number]");
-    for (var i = 0; i < inputs.length; i++) {
-        console.log(inputs[i].name + ": " + inputs[i].value);
+const textos = document.querySelectorAll("input[type=text]");
+const numeros = document.querySelectorAll("input[type=number]");
+const radios = document.querySelectorAll("input[type=radio]");
+const checkboxs = document.querySelectorAll("input[type=checkbox]");
+const area = document.querySelectorAll("textarea");
+const sel = document.querySelectorAll("select");
+const btn = document.getElementById("boton");
+
+function mostrarConsola() {
+    for (texto of textos) {
+        console.log(texto);
     }
-});
+    for (numero of numeros) {
+        console.log(numero);
+    }
+}
+
+btn.addEventListener("click", mostrarConsola)
+
+function marcadas() {
+    for (radio of radios) {
+        if (radio.checked) {
+            console.log(radio.value)
+        }
+    }
+}
+
+btn.addEventListener("click", marcadas)
